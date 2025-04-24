@@ -2,34 +2,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arokini Admin Panel</title>
-  <style>
-    body { font-family: sans-serif; background: #f0f0f0; padding: 20px; }
-    h1 { text-align: center; }
-    form { max-width: 400px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px #ccc; }
-    input, textarea { width: 100%; padding: 10px; margin-top: 10px; border-radius: 5px; border: 1px solid #ccc; }
-    button { padding: 10px 20px; background: #111; color: white; border: none; border-radius: 5px; cursor: pointer; margin-top: 10px; }
-    button:hover { background: #333; }
-  </style>
+    <meta charset="UTF-8">
+    <title>Arokinii | Admin Panel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+        h2 {
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+    </style>
 </head>
 <body>
-  <h1>Arokini Admin Panel</h1>
-  <form action="https://formspree.io/f/mexample" method="POST" enctype="multipart/form-data">
-    <label>T-shirt নাম:</label>
-    <input type="text" name="title" placeholder="T-shirt নাম লিখুন" required>
-
-    <label>মূল্য:</label>
-    <input type="text" name="price" placeholder="৳ দাম লিখুন" required>
-
-    <label>ছবি (Image):</label>
-    <input type="file" name="image" accept="image/*" required>
-
-    <label>বর্ণনা:</label>
-    <textarea name="description" placeholder="বিস্তারিত লিখুন"></textarea>
-
-    <button type="submit">পোস্ট করুন</button>
-  </form>
+    <div class="section">
+        <h2>প্রোডাক্ট যোগ করুন | Add Product</h2>
+        <form>
+            <label>পণ্যের নাম (Product Name):</label><br>
+            <input type="text" name="name"><br><br>
+            <label>মূল্য (Price):</label><br>
+            <input type="text" name="price"><br><br>
+            <label>ছবি আপলোড (Upload Image):</label><br>
+            <input type="file" name="image"><br><br>
+            <input type="submit" value="Add Product">
+        </form>
+    </div>
 </body>
 </html>
